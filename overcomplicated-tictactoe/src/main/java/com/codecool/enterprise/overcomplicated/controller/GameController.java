@@ -4,6 +4,7 @@ import com.codecool.enterprise.overcomplicated.model.Comic;
 import com.codecool.enterprise.overcomplicated.model.Player;
 import com.codecool.enterprise.overcomplicated.model.tictactoegame.AiService;
 import com.codecool.enterprise.overcomplicated.model.tictactoegame.TictactoeGame;
+import com.codecool.enterprise.overcomplicated.service.AvatarService;
 import com.codecool.enterprise.overcomplicated.service.ComicService;
 import com.codecool.enterprise.overcomplicated.service.FunFactService;
 import com.codecool.enterprise.overcomplicated.service.OutsourcedAiService;
@@ -19,7 +20,11 @@ public class GameController {
 
     private TictactoeGame game = new TictactoeGame(aiService);
     private FunFactService funFactService = new FunFactService();
+    private String fact = funFactService.getFunFact();
     private ComicService comicService = new ComicService();
+    Comic comic = comicService.getComic();
+    private AvatarService avatarService = new AvatarService();
+    private String avatar = avatarService.getAvatar();
 
 
     @ModelAttribute("player")
@@ -34,7 +39,7 @@ public class GameController {
 
     @ModelAttribute("avatar_uri")
     public String getAvatarUri() {
-        return "https://robohash.org/codecool";
+        return avatar;
     }
 
     @GetMapping(value = "/")
@@ -49,8 +54,7 @@ public class GameController {
 
     @GetMapping(value = "/game")
     public String gameView(@ModelAttribute("player") Player player, Model model) {
-        model.addAttribute("funfact", "&quot;"+ funFactService.getFunFact() +"&quot;");
-        Comic comic = comicService.getComic();
+        model.addAttribute("funfact", "&quot;"+ fact +"&quot;");
         model.addAttribute("comic_uri", comic.getImg());
         model.addAttribute("comic_hover_text", comic.getHoverText());
         model.addAttribute("board", game.getBoard());
