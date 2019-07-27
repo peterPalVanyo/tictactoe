@@ -3,8 +3,8 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/../overcomplicated-tic-tac-toe-java-peterPalVanyo/overcomplicated-tictactoe/pom.xml" />
         <option value="$PROJECT_DIR$/tictactoe-ai-service/pom.xml" />
+        <option value="$PROJECT_DIR$/overcomplicated-tictactoe/pom.xml" />
       </list>
     </option>
   </component>
