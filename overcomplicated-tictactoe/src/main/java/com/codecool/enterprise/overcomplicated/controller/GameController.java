@@ -3,6 +3,7 @@ package com.codecool.enterprise.overcomplicated.controller;
 import com.codecool.enterprise.overcomplicated.model.Player;
 import com.codecool.enterprise.overcomplicated.model.tictactoegame.AiService;
 import com.codecool.enterprise.overcomplicated.model.tictactoegame.TictactoeGame;
+import com.codecool.enterprise.overcomplicated.service.FunFactService;
 import com.codecool.enterprise.overcomplicated.service.OutsourcedAiService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,6 +16,7 @@ public class GameController {
     AiService aiService = new OutsourcedAiService();
 
     private TictactoeGame game = new TictactoeGame(aiService);
+    private FunFactService funFactService = new FunFactService();
 
     @ModelAttribute("player")
     public Player getPlayer() {
@@ -43,7 +45,7 @@ public class GameController {
 
     @GetMapping(value = "/game")
     public String gameView(@ModelAttribute("player") Player player, Model model) {
-        model.addAttribute("funfact", "&quot;Chuck Norris knows the last digit of pi.&quot;");
+        model.addAttribute("funfact", "&quot;"+ funFactService.getFunFact() +"&quot;");
         model.addAttribute("comic_uri", "https://imgs.xkcd.com/comics/bad_code.png");
         model.addAttribute("board", game.getBoard());
         return "game";

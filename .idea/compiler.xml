@@ -6,17 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="funfact-service" />
         <module name="overcomplicated-tictactoe" />
         <module name="tictactoe-ai-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="funfact-service" target="1.8" />
       <module name="overcomplicated-tictactoe" target="1.8" />
       <module name="tictactoe-ai-service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="funfact-service" options="-parameters" />
       <module name="tictactoe-ai-service" options="-parameters" />
     </option>
   </component>

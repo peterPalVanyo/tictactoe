@@ -5,6 +5,7 @@
       <list>
         <option value="$PROJECT_DIR$/tictactoe-ai-service/pom.xml" />
         <option value="$PROJECT_DIR$/overcomplicated-tictactoe/pom.xml" />
+        <option value="$PROJECT_DIR$/funfact-service/pom.xml" />
       </list>
     </option>
   </component>
