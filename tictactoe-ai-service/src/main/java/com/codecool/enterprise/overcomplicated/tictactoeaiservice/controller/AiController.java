@@ -2,7 +2,6 @@ package com.codecool.enterprise.overcomplicated.tictactoeaiservice.controller;
 
 import com.codecool.enterprise.overcomplicated.tictactoeaiservice.model.RequestToTTTApi;
 import com.codecool.enterprise.overcomplicated.tictactoeaiservice.model.ResponseFromTTTApi;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
