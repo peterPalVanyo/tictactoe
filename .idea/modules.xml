@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../overcomplicated-tic-tac-toe-java-peterPalVanyo/overcomplicated-tictactoe/overcomplicated-tictactoe.iml" filepath="$PROJECT_DIR$/../overcomplicated-tic-tac-toe-java-peterPalVanyo/overcomplicated-tictactoe/overcomplicated-tictactoe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tictactoe-ai-service/tictactoe-ai-service.iml" filepath="$PROJECT_DIR$/tictactoe-ai-service/tictactoe-ai-service.iml" />
+    </modules>
+  </component>
+</project>
