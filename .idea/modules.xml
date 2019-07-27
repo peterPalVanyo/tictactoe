@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/comics-service/comics-service.iml" filepath="$PROJECT_DIR$/comics-service/comics-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/funfact-service/funfact-service.iml" filepath="$PROJECT_DIR$/funfact-service/funfact-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/overcomplicated-tictactoe/overcomplicated-tictactoe.iml" filepath="$PROJECT_DIR$/overcomplicated-tictactoe/overcomplicated-tictactoe.iml" />
       <module fileurl="file://$PROJECT_DIR$/tictactoe-ai-service/tictactoe-ai-service.iml" filepath="$PROJECT_DIR$/tictactoe-ai-service/tictactoe-ai-service.iml" />
